@@ -1,110 +1,127 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - Utasa Academy</title>
-  <link rel="stylesheet" href="style.css">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Pro Page</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Sub Hero -->
-  <div class="sub-hero">
-    <div class="slide active" style="background-image: url('https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1771&q=80');"></div>
-    <h1>About Us</h1>
-  </div>
-
-  <!-- Main Content -->
-  <div class="container">
-    <h2 class="section-title">Our Story & Initiatives</h2>
-    <div class="section-line"></div>
-
-    <div class="grid">
-      <!-- Card 1 -->
-      <div class="card">
-        <img src="img/hero.jpg" alt="Our Mission">
-        <div class="card-body">
-          <h3>Our Mission</h3>
-          <p>We aim to empower young people through football, education, and outreach...</p>
-          <button data-modal="modal1">Read More</button>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <img src="img/utasalogo.png" alt="index.html">
+            </div>
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <nav id="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="#programs">Program</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#testimonials">Registration</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-      </div>
+    </header><br><br><br><br><br>
+<div class="about-head">
+  <h1><a style="font-family:'Playfair Display',serif;">About Us</a></h1>
+  <p><i>Discover our story, vision, and the team behind our success</i></p>
+  <button class="mode-toggle">🌙 Dark</button>
+</div>
 
-      <!-- Card 2 -->
-      <div class="card">
-        <img src="img/mbili.jpg" alt="Education Support">
-        <div class="card-body">
-          <h3>Education Support</h3>
-          <p>Beyond football, we provide learning opportunities for children...</p>
-          <button data-modal="modal2">Read More</button>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="card">
-        <img src="img/tatu.jpg" alt="Community Outreach">
-        <div class="card-body">
-          <h3>Community Outreach</h3>
-          <p>We run local programs that bring people together and inspire change...</p>
-          <button data-modal="modal3">Read More</button>
-        </div>
-      </div>
-
-      <!-- Card 4 -->
-      <div class="card">
-        <img src="img/hero.jpg" alt="Training Programs">
-        <div class="card-body">
-          <h3>Training Programs</h3>
-          <p>Our coaching sessions combine fun, discipline and skills development...</p>
-          <button data-modal="modal4">Read More</button>
-        </div>
-      </div>
+<section class="about-section">
+  <div class="about-block" data-animate="fade-left">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=1" alt="Story"></div>
+    <div class="about-text">
+      <h2>Our Story</h2>
+      <p><a style="font-family:'Playfair Display',serif; font-size: 25px;">Where Passion Meets Purpose</a><br>
+Founded in, 2023 by Coach Steven Raphael, Utasatanzania was born from a simple but powerful belief: no child's potential should be limited by their circumstances. What began as a dream in Kigoma has grown into a movement that combines sports excellence, education, and community transformation to create lasting change.
+</p>
+      <a href="#" class="btn-primary">Read More</a>
     </div>
   </div>
-
-  <!-- Modals -->
-  <div class="modal" id="modal1">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
+  <div class="about-block reverse" data-animate="fade-right">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=2" alt="Vision"></div>
+    <div class="about-text">
+      <h2>Our Vision</h2>
+      <p>A united Africa where every child has access to opportunities to grow their talents and achieve their dreams.
+</p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block" data-animate="fade-left">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=3" alt="Team"></div>
+    <div class="about-text">
+      <h2>Core Values</h2>
+      <p>&bull; Passion for sports and youth empowerment<br>
+         &bull; Discipline in training and character<br>
+         &bull; Hard work and perseverance<br>
+         &bull; Unity through sports<br>
+         &bull; Integrity in all actions<br>
+      </p>
+      <a href="#" class="btn-primary">Read More</a>
+    </div>
+  </div>
+  <div class="about-block reverse" data-animate="fade-right">
+    <div class="about-img"><img src="https://picsum.photos/600/400?random=4" alt="Mission"></div>
+    <div class="about-text">
       <h2>Our Mission</h2>
-      <p>At United Of Africa Academy, our mission is to empower youth through football, education, and community. We focus on discipline, teamwork, and leadership skills, ensuring that young people grow not just as players but as future leaders.</p>
+      <p>To create equal opportunities through sports, education, and community engagement.
+</p>
+      <a href="#" class="btn-primary">Read More</a>
     </div>
   </div>
+</section>
 
-  <div class="modal" id="modal2">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2>Education Support</h2>
-      <p>We partner with schools and provide resources such as books, tutoring, and mentorship. Education is key to breaking cycles of poverty, and we combine sports with learning to unlock potential.</p>
+<section class="timeline-section">
+  <h2 class="timeline-title">Our Journey</h2>
+  <div class="timeline">
+    <div class="timeline-item" data-animate="fade-up">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=10" alt="Logo1"></div>
+      <div class="timeline-content"><h3>2023 - Founded</h3><p>First program created.</p></div>
     </div>
-  </div>
-
-  <div class="modal" id="modal3">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2>Community Outreach</h2>
-      <p>Our outreach programs bring communities together through tournaments, events, and workshops. We emphasize inclusion, gender equality, and social responsibility.</p>
+    <div class="timeline-item" data-animate="fade-left">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=11" alt="Logo2"></div>
+      <div class="timeline-content"><h3>2023 - First Youth Tournament</h3><p>First youth competition participation under (13 - 15) in Arusha.</p></div>
     </div>
-  </div>
-
-  <div class="modal" id="modal4">
-    <div class="modal-content">
-      <span class="close-btn">&times;</span>
-      <h2>Training Programs</h2>
-      <p>Our football training sessions combine fun with structured development. Children learn technical skills, fitness, and discipline while also building confidence and friendships.</p>
+    <div class="timeline-item" data-animate="fade-right">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=12" alt="Logo3"></div>
+      <div class="timeline-content"><h3>2023 - First Youth Developmental League Launched</h3><p>Community teams where mobilised to lauch the league.</p></div>
     </div>
+    <div class="timeline-item" data-animate="fade-left">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=13" alt="Logo4"></div>
+      <div class="timeline-content"><h3>2024 - Ligi Ya Kitaa Initiative Launched</h3><p>Received community recognition for our innovation and impact.</p></div>
+    </div>
+    <div class="timeline-item" data-animate="fade-right">
+      <div class="timeline-icon"><img src="https://picsum.photos/100?random=14" alt="Logo5"></div>
+      <div class="timeline-content"><h3>2024 - Second Youth Tournament</h3><p>Second youth competition participation under (13 - 15) in Dar Es Salaam</p></div>
+    </div>
+      <div class="timeline-item" data-animate="fade-left">
+      <div class="timeline-icon"><img scr="https://picsum.photos/100?random=14" alt="logo6"></div>
+    <div class="timeline-content"><h3>2025 - First Elite Program Launched</h3><p>Launched MADT Elite program.</p></div>
   </div>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 Utasa Football Academy. All rights reserved.</p>
-  </footer>
+<footer class="about-footer">
+  <p>&copy; 2025 Your Company. All Rights Reserved.</p>
+</footer>
 
-  <script src="script.js"></script>
+  <script>
+      document.addEventListener("DOMContentLoaded", ()=>{
+    const elements=document.querySelectorAll(".about-block,.timeline-item");
+    const revealOnScroll=()=>{elements.forEach(el=>{const rect=el.getBoundingClientRect();if(rect.top<window.innerHeight-100){el.classList.add("show");}})};
+    window.addEventListener("scroll",revealOnScroll);
+    revealOnScroll();
+
+    const toggleBtn=document.querySelector(".mode-toggle");
+    toggleBtn.addEventListener("click",()=>{document.body.classList.toggle("dark");toggleBtn.textContent=document.body.classList.contains("dark")?"☀️ Light":"🌙 Dark";});
+  });
+  </script>
 </body>
 </html>

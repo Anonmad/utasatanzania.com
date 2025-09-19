@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fomu ya Mawasiliano</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+            padding: 30px;
+        }
+        
+        h2 {
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 5px;
+            color: #2c3e50;
+            font-weight: 600;
+        }
+        
+        input, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s;
+        }
+        
+        input:focus, textarea:focus {
+            border-color: #3498db;
+            outline: none;
+        }
+        
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        button {
+            background-color: #3498db;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: 600;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #2980b9;
+        }
+        
+        .success-message {
+            display: none;
+            background-color: #2ecc71;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Wasiliana Nasi</h2>
+        <form id="contactForm" action="https://formsubmit.co/kachiratechnology@gmail.com" method="POST">
+            <!-- Kubadilisha barua pepe yako hapo juu -->
+            
+            <div class="form-group">
+                <label for="name">Jina Kamili</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Barua Pepe</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="message">Ujumbe Wako</label>
+                <select id="program" name="program" required>
+                    <option value="" disabled selected>Chagua Programu</option>
+                    <option value="soccer">Soka</option>
+                    <option value="basketball">Basketball</option>
+                    <option value="volleyball">Volleyball</option>
+                    <option value="tennis">Tenis</option>
+                </select>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            
+            <input type="hidden" name="_next" value="index.html">
+            <input type="hidden" name="_subject" value="Ujumbe Mpya Kutoka kwa Wavuti">
+            <input type="text" name="_honey" style="display:none">
+            <input type="hidden" name="_captcha" value="false">
+            
+            <button type="submit">Tuma Ujumbe</button>
+        </form>
+        
+        <div class="success-message" id="successMessage">
+            Asante! Ujumbe wako umetumwa kikamilifu.
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            // Hii inaweza kutumika kama hakuna JavaScript inahitajika kwa mchango halisi
+            // FormSubmit itashughulikia kila kitu
+            // Unaweza kuongeza validation hapa kama unahitaji
+            
+            // Kuonyesha ujumbe wa mafanikio
+            document.getElementById('successMessage').style.display = 'block';
+        });
+    </script>
+</body>
+</html>

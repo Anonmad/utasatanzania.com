@@ -1,42 +1,30 @@
-// Navbar toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navbar = document.getElementById("navbar");
-menuToggle.addEventListener("click", () => {
-  navbar.classList.toggle("active");
-  menuToggle.innerHTML = navbar.classList.contains("active")
-    ? '<i class="fas fa-times"></i>'
-    : '<i class="fas fa-bars"></i>';
-});
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const mainNav = document.getElementById('main-nav');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mainNav.classList.toggle('active');
+        });
+        
+        // Header background change on scroll
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.style.background = "var(--primary)";
+                header.style.padding = "0.5rem 0";
+            } else {
+                header.style.background = "var(--primary)";
+                header.style.padding = "1rem 0";
+            }
+        });
 
-// Hero slider (auto change every 5s)
-let slides = document.querySelectorAll(".slide");
-let index = 0;
-function showSlide() {
-  slides.forEach((s, i) => s.classList.remove("active"));
-  slides[index].classList.add("active");
-  index = (index + 1) % slides.length;
-}
-setInterval(showSlide, 4000);
+const slides = document.querySelectorAll('.slide');
+  let current = 0;
 
-// Modals (About Page)
-const modalBtns = document.querySelectorAll("button[data-modal]");
-const modals = document.querySelectorAll(".modal");
-const closeBtns = document.querySelectorAll(".close-btn");
+  function nextSlide() {
+    slides[current].classList.remove('active');
+    current = (current + 1) % slides.length;
+    slides[current].classList.add('active');
+  }
 
-modalBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    document.getElementById(btn.dataset.modal).style.display = "flex";
-  });
-});
-
-closeBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    btn.parentElement.parentElement.style.display = "none";
-  });
-});
-
-window.addEventListener("click", e => {
-  modals.forEach(modal => {
-    if (e.target === modal) modal.style.display = "none";
-  });
-});
+  setInterval(nextSlide, 4000);
